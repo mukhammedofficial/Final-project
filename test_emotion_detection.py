@@ -1,28 +1,26 @@
+"""Unit tests for emotion detector."""
+
 import unittest
 from EmotionDetection import emotion_detector
 
 
 class TestEmotionDetector(unittest.TestCase):
-    def test_joy(self):
-        response = emotion_detector("I am glad this happened")
-        self.assertEqual(response["dominant_emotion"], "joy")
+    """Test suite for emotion detector."""
 
-    def test_anger(self):
-        response = emotion_detector("I am really mad about this")
-        self.assertEqual(response["dominant_emotion"], "anger")
+    def test_emotion_detector(self):
+        """Test dominant emotion detection."""
+        test_cases = {
+            "I am glad this happened": "joy",
+            "I am really mad about this": "anger",
+            "I feel disgusted just hearing about this": "disgust",
+            "I am so sad about this": "sadness",
+            "I am really afraid that this will happen": "fear"
+        }
 
-    def test_disgust(self):
-        response = emotion_detector("I feel disgusted just hearing about this")
-        self.assertEqual(response["dominant_emotion"], "disgust")
-
-    def test_sadness(self):
-        response = emotion_detector("I am so sad about this")
-        self.assertEqual(response["dominant_emotion"], "sadness")
-
-    def test_fear(self):
-        response = emotion_detector("I am really afraid that this will happen")
-        self.assertEqual(response["dominant_emotion"], "fear")
+        for text, expected_emotion in test_cases.items():
+            response = emotion_detector(text)
+            self.assertEqual(response["dominant_emotion"], expected_emotion)
 
 
-if __name__ == "__main__":
+if name == "__main__":
     unittest.main()
