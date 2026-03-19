@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Emotion Detector using Python and Flask
 
 This project is a simple AI-based web application that detects emotions in text by using the Watson NLP library endpoint.
@@ -19,3 +20,8 @@ This project is a simple AI-based web application that detects emotions in text 
 1- unit tests
 -art from zero- Flask server
 -t from zero a- project details
+=======
+# Final project
+
+This repository contains the final project for the AI-based web application using Python and Flask.
+>>>>>>> 74bac1b43cf448bc498b4a2dccfb8b5e0920ff63
