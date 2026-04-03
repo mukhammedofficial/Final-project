@@ -314,7 +314,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 👨‍💻 Author
 
-**Mukhammed Official**
+**Muhammad(Muhammadayubkhon) Dadakhanov**
 
 - GitHub: [@mukhammedofficial](https://github.com/mukhammedofficial)
 - Course: IBM - Developing AI Applications with Python and Flask
